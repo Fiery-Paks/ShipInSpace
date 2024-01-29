@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_Info"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="Click_Info"
+        android:text="Info"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Start"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <ImageView
+        android:id="@+id/imageViewArtem"
+        android:layout_width="331dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="96dp"
+        android:clickable="true"
+        android:onClick="Click_Image"
+        android:src="@drawable/artem"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="Menu"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_Start"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="264dp"
+        android:onClick="Click_Start"
+        android:text="Start"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
